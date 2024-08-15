@@ -1,0 +1,49 @@
+/* add link underline on hover */
+.navbar-brand:hover {
+    cursor: default;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  color: black;
+  font-weight: 500;
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+}
+.hover-underline::after, .hover-underline::before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    right: 0%; /* Span the full width of the nav-link */
+    height: 2.5px;
+    bottom: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transform: scaleX(0%);
+    background-color: lightcoral; /* Color of the underline */
+    transform-origin: center left;
+    transition: transform 0.4s cubic-bezier(0.51, 0, 0.08, 1);
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.51, 0, 0.08, 1);
+    transition-delay: 0s;
+    transition-property: transform;
+}
+
+.hover-underline.active::after, .hover-underline.active::before {
+  transform: scaleX(100%);
+  transform-origin: center right;
+}
+  
+.hover-underline:hover::after, .hover-underline:hover::before {
+  transform: scaleX(100%);
+  transform-origin: center right;
+}
+.hover-underline::before {
+  filter: blur(2.5px);
+}
