@@ -60,6 +60,22 @@
     opacity: 0;
 }
 
+.about__button-container .button-outline::before, .about__button-container .button-outline::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 105%;
+    background-image: conic-gradient(from var(--angle), transparent 70%, lightcoral);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 33px;
+    border-radius: 20px;
+    animation: 2s spin linear infinite;
+    opacity: 0;
+}
+
 @keyframes spin {
     from{
         --angle: 0deg;
@@ -96,7 +112,7 @@
 
 .button .icon {
     position: absolute;
-    object-fit: cover;
+    object-fit: contain;
     transition: 0.3s;
     transition-delay: 0.2s;
     opacity: 100%;
@@ -109,7 +125,7 @@
     width: 70% !important;
     height: 70% !important;
     position: absolute;
-    object-fit: cover;
+    object-fit: contain;
     transition-delay: 0.2s;
     opacity: 100%;
 }
