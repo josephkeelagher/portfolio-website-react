@@ -40,7 +40,7 @@ function App() {
           </div>
         </div>
         <div className="profile__pic-container">
-          <ProfileImage image="src\assets\profile-image.png" />
+          <ProfileImage image="src\assets\profile-image.jpeg"/>
         </div>
       </section>
       <section id="about">
