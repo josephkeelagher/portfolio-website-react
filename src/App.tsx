@@ -67,7 +67,18 @@ function App() {
             link=""
           />
         </div>
-        <div className="about__text-container"></div>
+        <div className="about__content-container">
+          <div className="about__pic-container">
+            <ProfileImage image="src\assets\mid-shot.jpeg"></ProfileImage>
+          </div>
+            <p>(B.Sc.) Bachelor's of Science - Computing & Software Systems </p>
+            <p>Class of 2024</p>
+          <div className="about__text-container">
+          </div>
+        
+          <div className="about__education">
+          </div>
+        </div>
       </section>
     </div>
   );

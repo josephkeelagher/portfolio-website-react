@@ -19,7 +19,6 @@ body {
 #about {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
@@ -30,7 +29,7 @@ section {
     min-height: 100vh;
 }
 
-.profile__pic-container {
+.profile__pic-container, .about__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
@@ -38,14 +37,15 @@ section {
     transition: 0.3s ease;
 }
 
-.profile__pic-container:hover {
+.profile__pic-container:hover , .about__pic-container:hover {
     height: 425px;
     width: 425px;
 }
 
-.profile__pic-container img{
+.profile__pic-container img , .about__pic-container img{
     border-radius: 25px;
 }
+
 
 img {
     overflow-clip-margin: content-box;
@@ -111,7 +111,6 @@ img {
 
 }
 
-
 .about__button-container {
     display: inline-flex;
     position: relative;
@@ -124,4 +123,13 @@ img {
     transition: 0.15s ease;
     border: 2px solid rgb(230, 230, 230);
     z-index: 0;
+}
+
+/* Specific styles for the content container inside the section */
+.about__content-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    width: 100%; 
+    align-items: center;
 }
