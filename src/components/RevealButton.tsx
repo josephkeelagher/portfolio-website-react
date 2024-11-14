@@ -5,21 +5,16 @@ interface Props {
   hoverType: string;
   image: string;
   text: string;
-  link: string;
   style?: string;
+  onClick: () => void;
 }
 
-function Button({hoverType, image, text, link, style}: Props) {
-  function buttonHandler(target: string) {
-    if (target) {
-      window.open(target, "_blank");
-    }
-  }
+function RevealButton({hoverType, image, text, style, onClick}: Props) {
 
   return (
     <div
       className={"button drop-shadow button-" + hoverType}
-      onClick={() => buttonHandler(link)}
+      onClick={onClick}
     >
       <img className={"icon " + style} src={image} alt={text + "image"} />
       <span className="button-title">{text}</span>
@@ -27,4 +22,4 @@ function Button({hoverType, image, text, link, style}: Props) {
   );
 }
 
-export default Button;
+export default RevealButton;
