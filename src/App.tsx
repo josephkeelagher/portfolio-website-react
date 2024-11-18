@@ -4,6 +4,7 @@ import "./App.css";
 import Button from "./components/Button";
 import "./styles/Button.css";
 import "./styles/Shadows.css";
+import About from "./components/About";
 
 function App() {
   return (
@@ -43,43 +44,7 @@ function App() {
           <ProfileImage image="src\assets\profile-image.jpeg"/>
         </div>
       </section>
-      <section id="about">
-        <h1 className="about__title">About Me</h1>
-        <div className="about__button-container drop-shadow">
-          <Button
-            hoverType="outline"
-            image="src\assets\school.svg"
-            text="Education"
-            style="icon-sm"
-            link=""
-          />
-          <Button
-            hoverType="outline"
-            image="src\assets\football.svg"
-            text="Hobbies"
-            link=""
-          />
-          <Button
-            hoverType="outline"
-            image="src\assets\rocket.svg"
-            text="Goals"
-            style="icon-sm"
-            link=""
-          />
-        </div>
-        <div className="about__content-container">
-          <div className="about__pic-container">
-            <ProfileImage image="src\assets\mid-shot.jpeg"></ProfileImage>
-          </div>
-            <p>(B.Sc.) Bachelor's of Science - Computing & Software Systems </p>
-            <p>Class of 2024</p>
-          <div className="about__text-container">
-          </div>
-        
-          <div className="about__education">
-          </div>
-        </div>
-      </section>
+      <About />
     </div>
   );
 }

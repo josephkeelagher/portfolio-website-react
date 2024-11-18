@@ -4,9 +4,14 @@ import Button from './Button';
 import RevealButton from './RevealButton';
 
 const About = () => {
-    const [activeSection, setActiveSection] = useState<string | null>(null);
+    
+    type SectionKey = keyof typeof content;
+    const [activeSection, setActiveSection] = useState<SectionKey>('default');
 
     const content = {
+        default: (
+            <p>Please click on a selection above to learn more about me!</p>
+        ),
         Education: 
         (<>
             <p>
@@ -62,6 +67,9 @@ const About = () => {
             text="Goals"
             style="icon-sm"
             onClick={() => setActiveSection('Goals')}/>
+        </div>
+        <div className="about__content">
+            {content[activeSection]}
         </div>
     </section>
   )
