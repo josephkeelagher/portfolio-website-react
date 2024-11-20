@@ -56,7 +56,7 @@ const About = () => {
             </div>
             <div className="about__text">
                 <p>
-                    I'm passionately pursuing a career in Software,
+                    I'm actively pursuing a career in Software,
                 </p>
                 <p>
                     I plan to bolster my Leadership & Engineering skills-

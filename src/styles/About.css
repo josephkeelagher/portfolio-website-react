@@ -3,10 +3,10 @@
     align-items: center; /* Center items horizontally */
     align-self: center;
     gap: 20px; /* Add space between items */
-    height: 100vh; /* Ensure full height for vertical centering */
+    height: 80vh; /* Ensure full height for vertical centering */
     font-size: 36px;
     font-weight: 400;
-    padding-bottom: 400px;
+    padding-bottom: 200px;
 }
 
 .about__text {

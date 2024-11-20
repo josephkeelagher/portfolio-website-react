@@ -1,18 +1,20 @@
 import React from 'react'
 import "../App.css"
 import "../styles/Shadows.css"
+import Button from './Button'
 
 const Card = () => {
   return (
     <>
-        <div className="project-card drop-shadow" style={{width: '20rem'}}>
-            <img src="..." className="card-img-top" alt="..."/>
-            <div className="project-card-body">
-                <h5 className="card-title">Example Project</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">GitHub</a>
-            </div>
+      <div className="projects__card-padding">
+        <div className="projects__card-container drop-shadow">
+          <div className="projects__card-contents-container">
+            <img src="src\assets\mid-shot.jpeg"/>
+            <h2>Example Project</h2>
+            <p>brief description</p>
+          </div>
         </div>
+      </div>
     </>
   )
 }
