@@ -2,6 +2,9 @@ import React from 'react';
 import { useState } from 'react';
 import Button from './Button';
 import RevealButton from './RevealButton';
+import "../styles/About.css";
+import ProfileImage from './ProfileImage';
+import "../App.css";
 
 const About = () => {
     
@@ -10,37 +13,58 @@ const About = () => {
 
     const content = {
         default: (
-            <p>Please click on a selection above to learn more about me!</p>
+            <p>Please click on a section above to learn more about me!</p>
         ),
         Education: 
         (<>
-            <p>
-                (B.Sc.) Bachelor of Science - Computing & Software Systems 
-            </p>
-            <p>
-                The University of Melbourne, Class of 2024
-            </p>
+            <div className="profile__pic-container">
+                <ProfileImage image="src\assets\mid-shot.jpeg"/>
+            </div>
+            <div className="about__text">
+                <p>
+                    (B.Sc.) Bachelor of Science,
+                </p>
+                <p>
+                    Major in Computing & Software Systems
+                </p>
+                <p>
+                    The University of Melbourne, Class of 2024
+                </p>
+            </div>
         </>),
         Hobbies: 
         (<>
-            <p>
-                I've played Soccer for 12+ years,
-            </p>
-            <p>
-                I love watching and producing films, 
-            </p>
-            <p>
-                and I'm passionate about fitness and strength training.
-            </p>
+            <div className="profile__pic-container">
+                <ProfileImage image="src\assets\beauyphoto1.jpg"/>
+            </div>
+            <div className="about__text">
+                <p>
+                    I've played Soccer for 12+ years,
+                </p>
+                <p>
+                    I love watching and producing films, 
+                </p>
+                <p>
+                    I'm passionate about fitness & strength training.
+                </p>
+            </div>
         </>),
         Goals:
         (<>
-            <p>
-                I'm passionate about pursuing a career in Software and Computer Science,
-            </p>
-            <p>
-                I plan to further my skills in areas such as Engineering and Leadership throughout my career.
-            </p>
+            <div className="profile__pic-container">
+                <ProfileImage image="src\assets\goldengatebridge.jpg"/>
+            </div>
+            <div className="about__text">
+                <p>
+                    I'm passionately pursuing a career in Software,
+                </p>
+                <p>
+                    I plan to bolster my Leadership & Engineering skills-
+                </p>
+                <p>
+                    while producing meaningful change in the world.
+                </p>
+            </div>
         </>),
     };
 

@@ -5,6 +5,9 @@ import Button from "./components/Button";
 import "./styles/Button.css";
 import "./styles/Shadows.css";
 import About from "./components/About";
+import "./styles/About.css";
+import Projects from "./components/Projects";
+
 
 function App() {
   return (
@@ -36,7 +39,7 @@ function App() {
               image="src\assets\document.svg"
               text="Resume"
               style="icon-sm"
-              link="src\assets\Joseph_Keelagher_Graduate_Resume.pdf"
+              link="src\assets\Joseph Keelagher 2024 Resume.pdf"
             />
           </div>
         </div>
@@ -45,6 +48,7 @@ function App() {
         </div>
       </section>
       <About />
+      <Projects />
     </div>
   );
 }

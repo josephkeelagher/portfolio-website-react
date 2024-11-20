@@ -12,7 +12,7 @@ function Nav() {
     const observerOptions = {
       root: null, // viewport
       rootMargin: `-${navHeight}px 0px 0px 0px`, // offset by the height of the nav
-      threshold: 0.5, // 50% of the section must be in view to trigger the observer
+      threshold: 0.6, // 50% of the section must be in view to trigger the observer
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -30,7 +30,8 @@ function Nav() {
     };
   }, []);
 
-  function handleNavClick(Nav: string) {
+  function handleNavClick(event: React.MouseEvent<HTMLAnchorElement>, Nav: string) {
+    event.preventDefault();
     setActiveNav(Nav);
     const section = document.getElementById(Nav);
     if (section) {
@@ -73,21 +74,9 @@ function Nav() {
                   }
                   href="#"
                   aria-current="page"
-                  onClick={() => handleNavClick("about")}
+                  onClick={(event) => handleNavClick(event, "about")}
                 >
                   About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className={
-                    "fs-3 hover-underline nav-link " +
-                    (activeNav === "experience" ? "active" : "")
-                  }
-                  href="#"
-                  onClick={() => handleNavClick("experience")}
-                >
-                  Experience
                 </a>
               </li>
               <li className="nav-item">
@@ -97,7 +86,7 @@ function Nav() {
                     (activeNav === "projects" ? "active" : "")
                   }
                   href="#"
-                  onClick={() => handleNavClick("projects")}
+                  onClick={(event) => handleNavClick(event,"projects")}
                 >
                   Projects
                 </a>
@@ -108,7 +97,7 @@ function Nav() {
                     "fs-3 hover-underline nav-link " +
                     (activeNav === "contact" ? "active" : "")
                   }
-                  onClick={() => handleNavClick("contact")}
+                  onClick={(event) => handleNavClick(event, "contact")}
                 >
                   Contact Me
                 </a>

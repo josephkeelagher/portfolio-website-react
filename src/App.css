@@ -42,7 +42,10 @@ section {
     width: 425px;
 }
 
-.profile__pic-container img , .about__pic-container img{
+.project-card:hover {
+}
+
+.profile__pic-container img , .about__pic-container img, .project-card{
     border-radius: 25px;
 }
 
@@ -73,13 +76,13 @@ img {
     margin: 0;
 }
 
-.profile__text-name, .about__title{
+.profile__text-name, .about__title, .projects__title{
     font-size: 3rem;
     color:black;
     margin: 0;
 }
 
-.about__title {
+.about__title, .projects__title {
     padding-bottom: 20px;
 }
 
@@ -89,7 +92,7 @@ img {
 
 /* About Section Styling */
 
-.about__text-container, .about__title {
+.about__text-container, .about__title, .projects__title {
 
     text-align: center;
     align-self: center;
