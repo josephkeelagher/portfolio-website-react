@@ -35,6 +35,12 @@
     transition-property: transform;
 }
 
+#contact .hover-underline::after, #contact .hover-underline::before {
+  bottom: 0px;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
 .hover-underline.active::after, .hover-underline.active::before {
   transform: scaleX(100%);
   transform-origin: center right;

@@ -7,6 +7,7 @@ import "./styles/Shadows.css";
 import About from "./components/About";
 import "./styles/About.css";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
       </section>
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 }
