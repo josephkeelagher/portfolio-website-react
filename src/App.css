@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+p {
+    font-size: 2rem;
+}
+
 body {
     position: relative;
     overflow-y: auto;
@@ -15,6 +19,16 @@ body {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+}
+
+@media (max-width: 1540px) {
+    #profile {
+        flex-direction: column-reverse;
+        gap: 0rem;
+        margin: 0;
+        align-items: center;
+        justify-content: start;
+    }
 }
 
 #about {
@@ -45,6 +59,15 @@ section {
     transition: 0.3s ease;
 }
 
+@media (max-width: 1540px) {
+    .profile__pic-container {
+        margin: 0rem;
+        min-height: 300px;
+        max-height: 300px;
+        width: 300px;
+    }
+}
+
 .profile__pic-container:hover , .about__pic-container:hover {
     height: 425px;
     width: 425px;
@@ -58,7 +81,7 @@ section {
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
-    object-fit: contain;
+    object-fit: cover;
 
 }
 
@@ -105,7 +128,7 @@ img {
 
 .about__button-container .button {
     position: relative;
-    width: 180px;
+    width: 5rem;
     height: 60px;
     background:white;
     border-radius: 20px;
@@ -133,6 +156,12 @@ img {
     z-index: 0;
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .projects__content {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 425px)); 
@@ -143,13 +172,37 @@ img {
     align-content: center; 
     width: 100%; 
     height: 100%; 
+    padding: 0;
+    margin: 0;
+}
+
+.projects__content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 425px)); 
+    gap: 20px;
+    justify-items: center; 
+    align-items: start; 
+    justify-content: center; 
+    align-content: center; 
+    width: 100%; 
+    height: 100%; 
+    padding: 0;
+    margin: 0;
+}
+
+/* Media query for screen sizes less than 1540px */
+@media (max-width: 1540px) {
+    .projects__content {
+        grid-template-columns: 1fr; /* Single-column layout */
+        gap: 20px; /* Optional: adjust the gap if needed */
+    }
 }
 
 .projects__card-container {
     border: 2px solid rgb(230, 230, 230);
     border-radius: 20px;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     overflow: hidden;
     transition: 0.3s ease;
     padding: 10px;
@@ -173,8 +226,8 @@ img {
 }
 
 .projects__card-padding {
-    width: 425px;
-    height: 425px;
+    width: 350px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,12 +251,13 @@ img {
 
 .contact-info-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border-radius: 2rem;
     border: black;
-    margin: 2rem auto;
     padding: 0.5rem;
 }
+
 
 .contact-method-container {
     display: flex;
@@ -215,4 +269,30 @@ img {
 
 .contact-icon {
     height: 2.5rem;
+}
+
+@media (max-width: 1540px) {
+    .about__content {
+        flex-direction: column;
+    }
+
+    #about {
+        height: auto;
+    }
+
+    #contact {
+        margin: 0;
+    }
+
+    #profile {
+        padding-top: 10rem;
+    }
+
+    #projects {
+        padding-top: 10rem;
+    }
+
+    #projects p {
+        font-size: 0.8rem;
+    }
 }

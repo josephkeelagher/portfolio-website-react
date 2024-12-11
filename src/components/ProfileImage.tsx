@@ -1,4 +1,5 @@
 import "../styles/Shadows.css";
+import "../App.css"
 
 interface Props {
   image: string;
