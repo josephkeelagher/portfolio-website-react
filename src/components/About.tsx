@@ -1,6 +1,4 @@
-import React from 'react';
 import { useState } from 'react';
-import Button from './Button';
 import RevealButton from './RevealButton';
 import "../styles/About.css";
 import ProfileImage from './ProfileImage';
@@ -18,7 +16,7 @@ const About = () => {
         Education: 
         (<>
             <div className="profile__pic-container">
-                <ProfileImage image="src\assets\mid-shot.jpeg"/>
+                <ProfileImage image="/assets/mid-shot.jpeg"/>
             </div>
             <div className="about__text">
                 <p>
@@ -35,7 +33,7 @@ const About = () => {
         Hobbies: 
         (<>
             <div className="profile__pic-container">
-                <ProfileImage image="src\assets\beauyphoto1.jpg"/>
+                <ProfileImage image="/assets/beauyphoto1.jpg"/>
             </div>
             <div className="about__text">
                 <p>
@@ -52,7 +50,7 @@ const About = () => {
         Goals:
         (<>
             <div className="profile__pic-container">
-                <ProfileImage image="src\assets\goldengatebridge.jpg"/>
+                <ProfileImage image="/assets/goldengatebridge.jpg"/>
             </div>
             <div className="about__text">
                 <p>
@@ -74,20 +72,20 @@ const About = () => {
         <div className="about__button-container drop-shadow">
             <RevealButton
             hoverType="outline"
-            image="src/assets/school.svg"
+            image="/assets/school.svg"
             text="Education"
             style="icon-sm"
             onClick={() => setActiveSection('Education')}
             />
             <RevealButton
             hoverType="outline"
-            image="src/assets/football.svg"
+            image="/assets/football.svg"
             text="Hobbies"
             onClick={() => setActiveSection('Hobbies')}
             />
             <RevealButton
             hoverType="outline"
-            image="src/assets/rocket.svg"
+            image="/assets/rocket.svg"
             text="Goals"
             style="icon-sm"
             onClick={() => setActiveSection('Goals')}/>

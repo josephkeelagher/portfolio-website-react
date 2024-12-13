@@ -1,7 +1,5 @@
-import React from 'react'
 import "../App.css"
 import "../styles/Shadows.css"
-import Button from './Button'
 
 interface Props {
   image : string;

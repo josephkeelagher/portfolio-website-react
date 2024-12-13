@@ -3,14 +3,11 @@
     padding: 0;
 }
 
-p {
-    font-size: 2rem;
-}
-
 body {
     position: relative;
     overflow-y: auto;
 }
+
 
 /* Profile Section Styling */
 #profile {
@@ -201,12 +198,14 @@ img {
 .projects__card-container {
     border: 2px solid rgb(230, 230, 230);
     border-radius: 20px;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
     transition: 0.3s ease;
     padding: 10px;
 }
+
+
 
 .projects__card-container:hover {
     transform: scale(1.0625);
@@ -226,8 +225,8 @@ img {
 }
 
 .projects__card-padding {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,6 +270,11 @@ img {
     height: 2.5rem;
 }
 
+#projects p {
+    font-size: 0.85rem;
+}
+
+
 @media (max-width: 1540px) {
     .about__content {
         flex-direction: column;
@@ -292,7 +296,23 @@ img {
         padding-top: 10rem;
     }
 
-    #projects p {
-        font-size: 0.8rem;
+    .projects__card-container {
+        width: 350px;
+        height: 350px;
     }
+    
+    .projects__card-padding {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+#about,
+#profile,
+#projects {
+    min-height: 80vh; /* Use min-height to ensure sections expand as needed */
+    height: auto; /* Let the content dictate the height when it grows */
+    display: flex;
+    justify-content: center; /* Center the content vertically if needed */
+    padding: 4rem 0; /* Add padding to create spacing within the section */
 }

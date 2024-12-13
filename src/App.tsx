@@ -24,28 +24,28 @@ function App() {
           <div className="button-container">
             <Button
               hoverType="outline"
-              image="src\assets\logo-github.svg"
+              image="/assets/logo-github.svg"
               text="GitHub"
               link="https://github.com/josephkeelagher"
             />
             <Button
               hoverType="outline"
-              image="src\assets\logo-linkedin.svg"
+              image="/assets/logo-linkedin.svg"
               text="LinkedIn"
               style="icon-sm"
               link="https://www.linkedin.com/in/joseph-keelagher-b67170292/"
             />
             <Button
               hoverType="fill"
-              image="src\assets\document.svg"
+              image="/assets/document.svg"
               text="Resume"
               style="icon-sm"
-              link="src\assets\Joseph Keelagher 2024 Resume.pdf"
+              link="/assets/Joseph Keelagher 2024 Resume.pdf"
             />
           </div>
         </div>
         <div className="profile__pic-container">
-          <ProfileImage image="src\assets\profile-image.jpeg"/>
+          <ProfileImage image="/assets/profile-image.jpeg"/>
         </div>
       </section>
       <About />
