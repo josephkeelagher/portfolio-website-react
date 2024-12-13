@@ -163,3 +163,28 @@
     transform: scale(1);
     transition-delay: 0.1s;
 }
+
+@media (max-width: 1540px) { /* Adjust the size as needed */
+    .button-fill {
+        width: 180px; /* Same as the hover state */
+    }
+
+    .button-fill::before {
+        opacity: 1; /* Same as the hover state */
+    }
+
+    .button-fill::after {
+        opacity: 0.5; /* Same as the hover state */
+    }
+
+    .button-fill .icon {
+        transform: scale(0); /* Mimics hover effect */
+        opacity: 0;
+        transition-delay: 0s;
+    }
+
+    .button-fill .button-title {
+        transform: scale(1); /* Make title visible */
+        transition-delay: 0.1s;
+    }
+}
