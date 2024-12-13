@@ -168,21 +168,7 @@ img {
     justify-content: center; 
     align-content: center; 
     width: 100%; 
-    height: 100%; 
-    padding: 0;
-    margin: 0;
-}
-
-.projects__content {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 425px)); 
-    gap: 20px;
-    justify-items: center; 
-    align-items: start; 
-    justify-content: center; 
-    align-content: center; 
-    width: 100%; 
-    height: 100%; 
+    height: auto; 
     padding: 0;
     margin: 0;
 }
@@ -315,4 +301,10 @@ img {
     display: flex;
     justify-content: center; /* Center the content vertically if needed */
     padding: 4rem 0; /* Add padding to create spacing within the section */
+    margin-bottom: 2rem;
+}
+
+.projects__content {
+    z-index: 0;
+    position: relative;
 }
