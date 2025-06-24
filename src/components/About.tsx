@@ -50,19 +50,19 @@ const About = () => {
         Goals:
         (<>
             <div className="profile__pic-container">
-                <ProfileImage image="/assets/goldengatebridge.jpg"/>
+            <ProfileImage image="/assets/goldengatebridge.jpg" />
             </div>
             <div className="about__text">
-                <p>
-                    I'm actively pursuing a career in Software,
-                </p>
-                <p>
-                    I plan to bolster my Leadership & Engineering skills-
-                </p>
-                <p>
-                    while producing meaningful change in the world.
-                </p>
-            </div>
+            <p>
+                I'm building high-impact software that solves real-world problems.
+            </p>
+            <p>
+                Currently sharpening my engineering and leadership skills at Exco Partners.
+            </p>
+            <p>
+                On a mission to craft web & mobile applications that people want to use.
+            </p>
+</div>
         </>),
     };
 

@@ -164,7 +164,7 @@
     transition-delay: 0.1s;
 }
 
-@media (max-width: 1540px) { /* Adjust the size as needed */
+@media (max-width: 1024px) { /* Adjust the size as needed */
     .button-fill {
         width: 180px; /* Same as the hover state */
     }
