@@ -40,7 +40,7 @@ function App() {
               image="/assets/document.svg"
               text="Resume"
               style="icon-sm"
-              link="/assets/Joseph Keelagher 2024 Resume.pdf"
+              link="/assets/Joseph_Keelagher_Resume_C_Java_Python_React.pdf"
             />
           </div>
         </div>
